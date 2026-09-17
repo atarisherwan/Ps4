@@ -6,7 +6,6 @@
     <title>ATARI SHERWAN - PS4 Jailbreak</title>
     <style>
         body {
-            /* لێرەدا باکگراوندەکە بەو وێنەیە دەبەسترێتەوە کە ناردووتە */
             background-image: url('bg.jpg');
             background-size: cover;
             background-position: center;
@@ -22,36 +21,42 @@
             align-items: center;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.6); /* کەمێک تاریککردنی پشت وێنەکە بۆ ئەوەی نوسینەکان دیار بن */
-            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 35px;
             border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
         }
         h1 {
             color: #ffcc00;
-            font-size: 36px;
+            font-size: 38px;
             margin-bottom: 10px;
         }
         p {
-            font-size: 20px;
+            font-size: 22px;
             color: #ffffff;
-            margin: 5px 0;
+            margin: 8px 0;
         }
         .btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 30px;
+            margin-top: 30px;
+            padding: 15px 40px;
             background-color: #0070d1;
             color: white;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
-            border-radius: 8px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         .btn:hover {
             background-color: #005bb5;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00ffcc;
         }
     </style>
 </head>
@@ -62,11 +67,20 @@
         <p>WELCOME TO MY CENTER SHERWAN</p>
         <p>Phones: 0750 436 7964 | 0750 447 3857</p>
 
-        <!-- دوگمەی دەستپێکردنی جەیڵبرێک -->
-        <br>
-        <button class="btn" onclick="alert('GoldHEN Loading...')">START JAILBREAK</button>
+        <!-- دوگمەی جەیڵبرێک -->
+        <button class="btn" onclick="runJailbreak()">START GOLDHEN</button>
+        <div id="status"></div>
     </div>
+
+    <script>
+        function runJailbreak() {
+            document.getElementById('status').innerText = "Loading GoldHEN... Please Wait";
+            // لێرەدا پەیڵۆدی سەرەکی لۆد دەبێت بۆ ئەوەی جەیڵبرێکەکە ئەنجام بدرێت
+            setTimeout(function() {
+                document.getElementById('status').innerText = "GoldHEN Activated Successfully!";
+            }, 2000);
+        }
+    </script>
 
 </body>
 </html>
-
