@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
+DOCTYPE html>
+<html><head>
 <title>ATARI SHERWAN - PS4 Exploit Host</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -8,24 +7,41 @@
 <script>
 var histlength=history.length;history.go(-histlength 2);
 </script>
-
-<!-- لێرەدا سکریپتی سەرەکی فیرموێرەکان و ئۆتۆماتیکەکەی کابرا دانراوە بۆ ئەوەی جایلبرێکەکە بکات -->
-<h1 id=msgs style="color: yellow; text-align: center; margin-top: 20px;">Welcome to my center SHERWAN</h1>
+<h1 id=msgs>Welcome To My Center Sherwan</h1>
 <hr>
 <br>
-
-<div id=menu style="text-align: center;">
-    <h1 style="font-size: 22px;color: #00ffcc;">ATARI SHERWAN - VIP HOST</h1>
-    <h2 style="font-size: 16px;color: #fff; margin-bottom: 20px;">TikTok/@Atari.Sherwan</h2>
-
-    <!-- دوگمەی سەرەکی بۆ ئۆتۆماتیک ئەکسپۆلۆیت بۆ هەموو فیرموێرەکان (5.05 تا 13.00) -->
-    <button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 13.00 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'" onclick="location.replace('g2all/index.html')" style="padding: 15px 30px; font-size: 18px; background: #222; color: #ffd700; border: 2px solid #ffd700; border-radius: 8px; cursor: pointer;"> Click Here For Auto Exploit (5.05 - 13.00) </button>
-    
-    <div style="margin-top: 50px;">
-        <h3 style="color: #fff; font-size: 14px;">A special thanks to all the devs on the scene.</h3>
-    </div>
+<div id=menu>
+<h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
+<button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 13.00 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'" onclick="location.replace('g2all/index.html')"> GoldHEN Multi FW </button>
+<button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'" onclick="location.replace('505/index.html')"> 5.05 FW v2.5 </button>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'"> 6.72 FW GoldHEN </button></a>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'"> 6.72 FW v3.0 </button></a>
+<br>
+<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'"> 9.00 FW GoldHEN </button></a>
+<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'"> 9.00 FW v3.0 </button></a>
+<br>
+<button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User&#8217;s Guide without using DNS'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'" onclick="location.replace('restore/index.html')"> Restore Host </button>
+<br>
+<button class="btn btn-onln" onmouseover="msgs.innerHTML='ATARI SHERWAN - Gaming Center'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'" onclick="donations()" style="margin-top: 137px;margin-bottom: 77px;width: 468px;"> ATARI SHERWAN </button>
+<h1 style="margin-top: 78px;">ATARI SHERWAN:<a href="#" style="color: #ffd700;margin-left: 10px;margin-right: 10px;">TikTok/@Atari.Sherwan</a>A special thanks to all the devs on the scene.</h1>
 </div>
+<div id=crypto>
+<h1 style="font-size: 18px;color: yellow;">Sherwan Center Contact:</h1>
+<br>
+<h1 style="font-size: 18px; color: #ffd700;">0750 436 7964 - 0750 447 3857</h1>
+<br>
+<button class="btn" onclick="load_menu()"> Return </button>
+</div>
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
 
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
 </body>
 </html>
-
