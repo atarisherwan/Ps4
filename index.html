@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 <title>ATARI SHERWAN - PS4 Exploit Host</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -7,41 +8,57 @@
 <script>
 var histlength=history.length;history.go(-histlength 2);
 </script>
-<h1 id=msgs>Welcome to my center SHERWAN</h1>
-<hr>
-<br>
-<div id=menu>
-<h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
-<button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 13.00 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'" onclick="location.replace('g2all/index.html')"> GoldHEN Multi FW </button>
-<button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'" onclick="location.replace('505/index.html')"> 5.05 FW v2.5 </button>
-<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'"> 6.72 FW GoldHEN </button></a>
-<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'"> 6.72 FW v3.0 </button></a>
-<br>
-<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'"> 9.00 FW GoldHEN </button></a>
-<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'"> 9.00 FW v3.0 </button></a>
-<br>
-<button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User’s Guide without using DNS'" onmouseout="msgs.innerHTML='Welcome To My Center Sherwan'" onclick="location.replace('restore/index.html')"> Restore Host </button>
-<br>
-<button class="btn btn-onln" onmouseover="msgs.innerHTML='Welcome to Atari Sherwan Gaming Center'" onmouseout="msgs.innerHTML='Welcome to my center SHERWAN'" onclick="donations()" style="margin-top: 137px;margin-bottom: 77px;width: 468px;"> SHERWAN CENTER - GAMING STORE </button>
-<h1 style="margin-top: 78px; font-size: 20px;">ATARI SHERWAN <a href="#" style="color: #ffd700;margin-left: 10px;margin-right: 10px;">TikTok: @atari sherwan</a></h1>
-<h1 style="margin-top: 10px; font-size: 14px; color: #aaa;">A special thanks to all the devs on the scene.</h1>
-</div>
-<div id=crypto>
-<h1 style="font-size: 18px;color: yellow;">Sherwan Center Contact Info:</h1>
-<h1 style="font-size: 18px; color: #ffd700;">0750 436 7964 | 0750 447 3857</h1>
-<br>
-<button class="btn" onclick="load_menu()"> Return </button>
-</div>
-<script>
-function donations(){
-document.getElementById("crypto").style.display = "block";
-document.getElementById("menu").style.display = "none";
-}
 
-function load_menu(){
-document.getElementById("menu").style.display = "block";
-document.getElementById("crypto").style.display = "none";
+<div class="vip-container">
+    <h1 class="main-title">WELCOME TO MY CENTER SHERWAN</h1>
+    <div class="brand-box">
+        <h2 class="sub-title">ATARI SHERWAN</h2>
+        <p class="tiktok-text">TikTok/@Atari.Sherwan</p>
+    </div>
+</div>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-</script>
+.vip-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 40px 60px;
+    border-radius: 15px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+.main-title {
+    font-size: 32px;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.sub-title {
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #000;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.tiktok-text {
+    font-size: 18px;
+    color: #00ffcc;
+    text-shadow: 1px 1px 4px #000;
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+
 </body>
 </html>
